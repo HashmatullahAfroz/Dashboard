@@ -1,0 +1,14 @@
+.navbar_top{
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	height : 6rem;
+}
+
+.navbar{
+	display: flex;
+	flex-flow: column wrap;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}

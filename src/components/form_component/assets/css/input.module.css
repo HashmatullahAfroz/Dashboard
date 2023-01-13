@@ -1,0 +1,40 @@
+.formControl{
+	padding: 7px;
+	margin: 10px 0px;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	width: 80%;
+}
+.btn{
+	padding:10px 20px;
+	background: darkred;
+	border-radius: 5px;
+	width: 83%;
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition: all .2s;
+}
+.btn:hover, .btn:focus{
+	box-shadow: 0px 0px 7px #333;
+	outline: none;
+}
+.disable{
+	padding:10px 20px;
+	border-radius: 5px;
+	width: 83%;
+	border: none;
+	cursor: not-allowed;	
+}
+
+@media(min-width: 1088px){
+	.formControl{
+		width: 80%;
+	}
+
+	.btn, .disable{
+		width: 83;
+	}
+	
+}

@@ -1,0 +1,46 @@
+*{
+	box-sizing: border-box;
+}
+
+.container_fluid{ 
+	width: 100%;
+}
+
+.row{
+	display: flex;
+	flex-flow: wrap;
+	width: 100%;
+}
+
+.col_md_4{
+	flex: 0 0 15%;
+	flex-flow: row wrap;
+	height: 100vh;
+	color: white;
+	background: red;
+}
+
+.col_md_8{
+	padding: .7rem;
+	flex: 0 0 85%; 
+	flex-flow: row wrap; 
+	color: white;
+	height: 6vh;
+	background: orange; 
+}
+
+@media(max-width: 1000px){ 
+
+		.col_md_4{ 
+			display: none;
+		}
+
+		.col_md_8{
+			flex-flow: row wrap;
+			flex: 0 0 100%;
+			justify-content: space-between; 
+			color: white;
+			height: 10vh;
+			background: orange;
+		}
+}

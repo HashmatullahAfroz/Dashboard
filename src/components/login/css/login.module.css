@@ -1,0 +1,27 @@
+html, body{
+	margin: 0px;
+}
+.container{
+	height: 100vh;
+	background: ghostwhite;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.row{
+	width: 80%;
+	height: 50%;
+	border-radius: 7px;
+	background: orange;
+	box-shadow: 0px 0px 8px #333;
+}
+
+
+@media(min-width: 800px){
+	.row{
+		width: 20%;
+		height: 50%;
+	}
+}
