@@ -28,7 +28,7 @@ const isMainPage = (checkLogged)=>{
 
 	return(
 		<>
-			{isLogged  ?	 <Dashboard />  :  <MyContext.Provider  value={{isMainPage: isMainPage}} > <Login /></MyContext.Provider> }
+			{isLogged  ? <Dashboard />  :  <MyContext.Provider  value={{isMainPage: isMainPage}} > <Login /></MyContext.Provider> }
 		</>
 		)
 }
