@@ -10,10 +10,8 @@ export const App = ()=>{
 	const [isLogged, setIsLogged] = useState(false);
 	useEffect(()=>{
 		let logged = localStorage.getItem('logged');
-		if(logged === 1){
-			setIsLogged(true);
-		}else{
-			setIsLogged(false);
+		logged === 1 ? setIsLogged(true)  : setIsLogged(false);
+		if(logged === 0){
 			alert('for testing username is test@hash.com and password is hithithit');
 		}
 	}, []);
