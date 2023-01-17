@@ -22,7 +22,7 @@ export const Form = (props)=>{
 			}else{
 				setValid(true);
 			}
-		} 
+		}
 
 		const setSubmitHandler = ()=>{
 			const dt = { user: user, pass:pass};
@@ -33,7 +33,7 @@ export const Form = (props)=>{
 						const res = await respons.json();
 						if(res.status){
 							localStorage.setItem('user', res.data);
-							context_api_fun.isMainPage(true); 
+							context_api_fun.isMainPage(true);
 						}else{
 							document.getElementById('error').style.display = 'block';
 							setTimeout(()=>{
