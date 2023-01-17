@@ -4,6 +4,7 @@ import {Login} from './components/login/Login';
 import { Dashboard } from "./components/dashboard/dashboardPage/Dashbaord";
 export const MyContext = React.createContext();
 
+
 export const App = ()=>{
 
 
@@ -12,7 +13,7 @@ export const App = ()=>{
 		let logged = localStorage.getItem('logged');
 		logged === 1 ? setIsLogged(true)  : setIsLogged(false);
 		if(logged === 0){
-			alert('for testing username is test@hash.com and password is hithithit');
+			alert('for testing username is test@hash.com and password is test123');
 		}
 	}, []);
 

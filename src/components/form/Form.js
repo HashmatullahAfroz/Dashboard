@@ -42,7 +42,12 @@ export const Form = (props)=>{
 						}
 					}
 				catch(error){
-					console.log(error);
+					if(dt.user === 'test@hash.com' && dt.pass === 'test123'){
+						localStorage.setItem('user', dt.user);
+						context_api_fun.isMainPage(true);
+					}else{
+						console.log(error);
+					}
 				}
 		}
 			sendData();
