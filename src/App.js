@@ -16,7 +16,7 @@ export const App = ()=>{
 			setIsLogged(false);
 			alert('for testing username is test@hash.com and password is hithithit');
 		}
-	}, [isLogged]);
+	}, []);
 
 
 const isMainPage = (checkLogged)=>{
