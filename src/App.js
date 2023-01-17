@@ -10,7 +10,7 @@ export const App = ()=>{
 	const [isLogged, setIsLogged] = useState(false);
 	useEffect(()=>{
 		let logged = localStorage.getItem('logged');
-		if(logged == 1){
+		if(logged === 1){
 			setIsLogged(true);
 		}else{
 			setIsLogged(false);
