@@ -11,16 +11,15 @@ export const App = ()=>{
 	const [isLogged, setIsLogged] = useState(false);
 	useEffect(()=>{
 		let logged = localStorage.getItem('logged');
-		logged === 1 ? setIsLogged(true)  : setIsLogged(false);
-		if(logged === 0){
+		logged === '1' ? setIsLogged(true)  : setIsLogged(false);
+		if(logged === '0'){
 			alert('for testing username is test@hash.com and password is test123');
 		}
 	}, []);
 
-
 const isMainPage = (checkLogged)=>{
-	 	setIsLogged(checkLogged);
-	 	 localStorage.setItem('logged', 1);
+		setIsLogged(checkLogged);
+		localStorage.setItem('logged', 1);
 	 }
 
 
