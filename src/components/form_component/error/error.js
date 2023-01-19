@@ -1,6 +1,9 @@
+// import main react
 import React from 'react';
+// import assets
 import error from '../assets/css/error.module.css';
 
+// export main function
 export const Error = (props)=>{
 	return(
 		<>
@@ -9,5 +12,5 @@ export const Error = (props)=>{
 			</div>
 		</>
 		)
-} 
+}
 

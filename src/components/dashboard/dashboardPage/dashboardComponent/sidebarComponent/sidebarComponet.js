@@ -1,11 +1,11 @@
+// import main react
 import React from 'react';
 
 // import assets
 import img from './assets/img/hash.jpg';
 import sidebaerComponent from './assets/sidebarComponent.module.css';
 
-
-
+// export function
 export const Header = ({alt})=>{
 
 

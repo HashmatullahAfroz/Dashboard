@@ -1,16 +1,28 @@
-import React, { useState, useContext } from 'react';
-import {Input, Button} from '../form_component/input/input';
-import form_style from './css/form.module.css';
+// import main react
+import React  from 'react';
+
+// import hooks
+import { useState, useContext }  from 'react';
 import { MyContext } from '../../App';
+
+// import components
+import {Input, Button} from '../form_component/input/input';
 import { Error } from '../form_component/error/error';
+
+// import assets
+import form_style from './css/form.module.css';
+
+// export function
 export const Form = (props)=>{
 
-
+// hooks variable for username and password
 	const [ user, setUser ] = useState('');
 	const [ pass, setPass ] = useState('');
 	const [ valid, setValid ] = useState(true);
 	const context_api_fun = useContext( MyContext );
 
+
+// taking variables value
 	const setUserHandler = (e)=>{
 			setUser(e.target.value);
 	}
@@ -24,6 +36,8 @@ export const Form = (props)=>{
 			}
 		}
 
+
+// sending to backend
 		const setSubmitHandler = ()=>{
 			const dt = { user: user, pass:pass};
 			const sendData = async ()=>{
@@ -50,6 +64,7 @@ export const Form = (props)=>{
 					}
 				}
 		}
+		// calling async function
 			sendData();
 }
 	return(

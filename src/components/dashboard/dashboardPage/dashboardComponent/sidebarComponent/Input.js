@@ -1,6 +1,9 @@
+// import main react
 import React from "react";
+// import assets
 import dash_input from "./assets/input.module.css";
 
+// below export functions
 export  const Button = ({
 		type,
 		value,

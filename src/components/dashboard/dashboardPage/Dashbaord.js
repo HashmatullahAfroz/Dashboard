@@ -1,8 +1,13 @@
+// import main react
 import React from 'react'
+
+// import components
 import { Button, Search, OpenSideBar }  from './dashboardComponent/sidebarComponent/Input';
 import { Sidebar }  from '../dashboardPage/dashboardComponent/Sidebar';
+// import assets
 import dashboard from './css/dashboard.module.css';
 
+// export functions
 export const Dashboard = ()=>{
 	const setLogoutHandler = ()=>{
 		localStorage.setItem('logged', 0);

@@ -1,12 +1,21 @@
-import {React, useState, useEffect} from "react";
+// import main react
+import React from "react";
+
+// import hooks
+import {useState, useEffect} from 'react';
+
+// import components
 import {Header, Contents} from './sidebarComponent/sidebarComponet';
 
+// import assets
 import sidebar_style from './sidebarComponent/assets/sidebar.module.css';
 
+// export functions
 export const Sidebar = ()=>{
 
 	const [username, setUserName] = useState();
 
+	// use effect for inside of dashboard
 	useEffect(()=>{
 		let user = localStorage.getItem('user');
 		let new_user = user.split("@gmail.com").join('');
