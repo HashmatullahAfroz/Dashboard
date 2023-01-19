@@ -1,11 +1,18 @@
 import React from 'react';
-import Content from './assets/sidebarComponent.module.css';
 
-export const Header = (props)=>{
+// import assets
+import img from './assets/img/hash.jpg';
+import sidebaerComponent from './assets/sidebarComponent.module.css';
+
+
+
+export const Header = ({alt})=>{
+
 
 	return(
 		<>
-			<img src='' alt={props.alt} className={`${Content.img}`} />
+			<img src={img} alt={alt} className={`${sidebaerComponent.img}`} />
+			<span style={{marginLeft: '1rem'}} >{alt}</span>
 		</>
 		)
 }
@@ -13,9 +20,9 @@ export const Header = (props)=>{
 export const Contents = (props)=>{
 
 	return(
-		<>	
-			<li className={`${Content.nav_list}`}  >
-				<a href={props.link} className={`${ Content.nav_link}`} style={{color: 'white'}}  >
+		<>
+			<li className={`${sidebaerComponent.nav_list}`}  >
+				<a href={props.link} className={`${ sidebaerComponent.nav_link}`} style={{color: 'black'}}  >
 					{props.listname}
 				</a>
 			</li>

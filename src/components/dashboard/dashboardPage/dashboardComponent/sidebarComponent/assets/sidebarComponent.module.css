@@ -1,13 +1,19 @@
-.img{
-	
-}
-
 .nav_link{
 	display: flex;
-	text-decoration: none; 
-	border-bottom: thin solid #ccc;
+	text-decoration: none;
+	border-bottom: thin solid #222;
 	padding: 1rem;
 	transition: all .2s;
+}
+
+.nav_link:hover{
+	color: white !important;
+}
+
+.img{
+	width: 80px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 10px orange;
 }
 
 .nav_link:hover{
@@ -15,7 +21,7 @@
 
 }
 
-.nav_list{ 
+.nav_list{
 	list-style: none;
 	margin: .5rem 0rem;
 }

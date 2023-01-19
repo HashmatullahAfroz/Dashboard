@@ -1,0 +1,26 @@
+.btn{
+	padding:10px 20px;
+	background: darkred;
+	float: right;
+	border-radius: 5px;
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition: all .2s;
+}
+.btn:hover, .btn:focus{
+	box-shadow: 0px 0px 7px #333;
+	outline: none;
+}
+.search{
+	border-radius: 5px;
+	padding: 7px;
+	border: none;
+	width: 20%;
+	outline: none;
+	box-shadow: 0px 0px 3px rgb(54, 54, 255);
+}
+
+.search:focus, .search:active{
+	box-shadow: 0px 0px 5px rgb(0, 0, 255);
+}

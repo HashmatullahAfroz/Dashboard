@@ -1,0 +1,23 @@
+.comapany_name{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 4.8rem;
+	border-bottom : thin dashed #222;
+	margin-bottom: 1rem;
+}
+
+.sidebar_top{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height : 6rem;
+}
+
+.sidebar{
+	display: flex;
+	flex-flow: column wrap;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
