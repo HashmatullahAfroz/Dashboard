@@ -11,8 +11,8 @@ export const Header = ({alt})=>{
 
 	return(
 		<>
-			<img src={img} alt={alt} className={`${sidebaerComponent.img}`} />
-			<span style={{marginLeft: '1rem'}} >{alt}</span>
+			<a href='https://github.com/HashmatullahAfroz' target='blank' ><img src={img} alt={alt} className={`${sidebaerComponent.img}`} /></a>
+			<b><span style={{marginLeft: '1rem'}} >{alt}</span></b>
 		</>
 		)
 }

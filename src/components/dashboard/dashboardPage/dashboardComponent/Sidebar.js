@@ -15,6 +15,18 @@ export const Sidebar = ()=>{
 
 	const [username, setUserName] = useState();
 
+	const list = [
+		{id: 'e1', listname: 'HomePage', link: ''},
+		{id: 'e2', listname: 'Language', link: ''},
+		{id: 'e3', listname: 'Programming', link: ''},
+		{id: 'e4', listname: 'Front', link: ''},
+		{id: 'e5', listname: 'Backend', link: ''},
+		{id: 'e6', listname: 'Windows', link: ''},
+		{id: 'e7', listname: 'Support', link: ''},
+		{id: 'e8', listname: 'Contact', link: ''},
+		{id: 'e9', listname: 'Data', link: ''},
+	]
+
 	// use effect for inside of dashboard
 	useEffect(()=>{
 		let user = localStorage.getItem('user');
@@ -33,15 +45,13 @@ export const Sidebar = ()=>{
 						<Header alt={username} />
 					</div>
 					<ul className={`${sidebar_style.sidebar}`}>
-						<Contents listname='HomePage' link=''  />
-						<Contents listname='Language' link=''  />
-						<Contents listname='Programming' link=''  />
-						<Contents listname='Front-End' link=''  />
-						<Contents listname='Backend' link=''  />
-						<Contents listname='Windows' link=''  />
-						<Contents listname='Support' link=''  />
-						<Contents listname='Contact Us' link=''  />
-						<Contents listname='Data Source' link=''  />
+						{
+							list.map((dt)=>{
+								return(
+									<Contents key={dt.id} listname={dt.listname} link={dt.link} />
+								)
+							})
+						}
 					</ul>
 				</nav>
 			</>
